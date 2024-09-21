@@ -12,6 +12,22 @@ document.addEventListener('DOMContentLoaded', function () {
         displayFiles(resumes, coverLetters);
     });
 
+    // Load and display job applications
+    chrome.storage.sync.get(['jobApplications'], function(data) {
+        const jobApplications = data.jobApplications || [];
+        displayJobApplications(jobApplications);
+    });
+
+    function displayJobApplications(applications) {
+        const jobList = document.createElement('ul');
+        applications.forEach(app => {
+            const li = document.createElement('li');
+            li.textContent = `Job: ${app.jobTitle}, Company: ${app.companyName}, Date: ${app.dateApplied}`;
+            jobList.appendChild(li);
+        });
+        document.body.appendChild(jobList);
+    }
+
     uploadForm.addEventListener('submit', function (event) {
         event.preventDefault();
 

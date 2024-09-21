@@ -8,6 +8,24 @@
         inputElement.dispatchEvent(new Event('change', { bubbles: true }));
     }
 
+    // Function to log job application
+    function logJobApplication(jobTitle, companyName) {
+        const dateApplied = new Date().toLocaleDateString();
+        const jobEntry = { jobTitle, companyName, dateApplied };
+
+        chrome.storage.sync.get(['jobApplications'], function(data) {
+            const jobApplications = data.jobApplications || [];
+            jobApplications.push(jobEntry);
+            chrome.storage.sync.set({ jobApplications }, function() {
+                console.log('Job application logged:', jobEntry);
+            });
+        });
+    }
+
+    // Example usage: log a job application
+    // This should be replaced with actual data extraction from the job application page
+    logJobApplication('Software Engineer', 'Tech Company');
+
     // Function to autofill the forms
     function autofillForms() {
         chrome.storage.sync.get(['resumes', 'coverLetters'], function(data) {
