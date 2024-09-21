@@ -37,7 +37,17 @@
         "*://*.dice.com/*",
         "*://*.job.com/*",
         "*://*.snagajob.com/*",
-        "*://*.usajobs.gov/*"
+        "*://*.usajobs.gov/*",
+        "*://*.jobstreet.com/*",
+        "*://*.jobsdb.com/*",
+        "*://*.seek.com.au/*",
+        "*://*.totaljobs.com/*",
+        "*://*.reed.co.uk/*",
+        "*://*.jobserve.com/*",
+        "*://*.jobsite.co.uk/*",
+        "*://*.workopolis.com/*",
+        "*://*.eluta.ca/*",
+        "*://*.jobbank.gc.ca/*"
       ],
       "js": ["content.js"]
     }
