@@ -47,7 +47,25 @@
         "*://*.jobsite.co.uk/*",
         "*://*.workopolis.com/*",
         "*://*.eluta.ca/*",
-        "*://*.jobbank.gc.ca/*"
+        "*://*.jobbank.gc.ca/*",
+        "*://*.jobs.com/*",
+        "*://*.jobrapido.com/*",
+        "*://*.neuvoo.com/*",
+        "*://*.jobisjob.com/*",
+        "*://*.jobg8.com/*",
+        "*://*.jobcase.com/*",
+        "*://*.jobfinderusa.com/*",
+        "*://*.jobdiagnosis.com/*",
+        "*://*.jobinventory.com/*",
+        "*://*.joblift.com/*",
+        "*://*.jobspider.com/*",
+        "*://*.jobzone.com/*",
+        "*://*.jobserve.com/*",
+        "*://*.jobstreet.com.sg/*",
+        "*://*.jobstreet.com.my/*",
+        "*://*.jobstreet.com.ph/*",
+        "*://*.jobstreet.co.id/*",
+        "*://*.jobstreet.com.vn/*"
       ],
       "js": ["content.js"]
     }
