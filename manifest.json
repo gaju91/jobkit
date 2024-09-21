@@ -67,7 +67,7 @@
         "*://*.jobstreet.co.id/*",
         "*://*.jobstreet.com.vn/*"
       ],
-      "js": ["content.js"]
+      "js": ["autofill.js"]
     }
   ]
 }

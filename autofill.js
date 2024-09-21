@@ -21,14 +21,20 @@
             if (defaultResume) {
                 const resumeInput = document.querySelector('input[type="file"][name*="resume"]');
                 if (resumeInput) {
+                    console.log('Resume input found:', resumeInput);
                     simulateFileUpload(resumeInput, defaultResume);
+                } else {
+                    console.log('Resume input not found');
                 }
             }
 
             if (defaultCoverLetter) {
                 const coverLetterInput = document.querySelector('input[type="file"][name*="coverLetter"]');
                 if (coverLetterInput) {
+                    console.log('Cover letter input found:', coverLetterInput);
                     simulateFileUpload(coverLetterInput, defaultCoverLetter);
+                } else {
+                    console.log('Cover letter input not found');
                 }
             }
         });
